@@ -1,0 +1,18 @@
+<!-- Portfolio-->
+<div id="portfolio">
+  <div class="container-fluid p-0">
+    <div class="row no-gutters justify-content-center">
+      <% @Lista_imagens.each do |imagem| %>
+        <div class="col-lg-4 col-sm-6 border-white" align="center">
+          <%= link_to projects_path(chave: imagem[:chave]), class: 'portfolio-box', target: '_blank' do %>
+            <%= image_tag("portfolio/thumbnails/#{imagem[:img]}", class: "img-fluid") %>
+            <div class="portfolio-box-caption">
+              <div class="project-category text-white-50"><h3><%= imagem[:titulo] %></h3></div>
+              <div class="project-name"><%= imagem[:descricao] %></div>
+            </div>
+          <% end %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
