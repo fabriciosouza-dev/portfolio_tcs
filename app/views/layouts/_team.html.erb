@@ -8,7 +8,7 @@
       <% @lista_membros.each do |membro| %>
         <div class="col-lg-4">
           <div class="team-member">
-            <%= image_tag(membro[:foto], class: "mx-auto rounded-circle") %>
+            <%= image_pack_tag("#{membro[:foto]}", class: 'mx-auto rounded-circle') %>
             <h4><%= membro[:nome] %></h4>
             <p class="text-muted"><%= membro[:especialidade] %></p>
             <% membro[:social_medias].each do |social_media| %>

@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import "~bootstrap/scss/bootstrap.scss";
 /*!
 * Start Bootstrap - Creative v6.0.4 (https://startbootstrap.com/theme/creative)
 * Copyright 2013-2020 Start Bootstrap
@@ -10675,7 +10676,7 @@ hr.light {
 header.masthead {
     padding-top: 10rem;
     padding-bottom: calc(10rem - 4.5rem);
-    background: linear-gradient(to bottom, rgba(33, 37, 41, 0.8) 0%, rgba(33, 37, 41, 0.8) 100%), url("bg-masthead.jpg");
+    background: linear-gradient(to bottom, rgba(33, 37, 41, 0.8) 0%, rgba(33, 37, 41, 0.8) 100%), url("../images/bg-masthead.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -10784,7 +10785,7 @@ header.masthead h1 {
 
 section#contact {
     background-color: #212529;
-    background-image: url("map-image.png");
+    background-image: url("../images/map-image.png");
     background-repeat: no-repeat;
     background-position: center;
 }
