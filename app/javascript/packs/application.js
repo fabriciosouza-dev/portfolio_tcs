@@ -18,4 +18,5 @@ require('popper.js')
 require('jquery-mask-plugin')
 require('jquery.easing')
 require('magnific-popup')
+import '../scss/application.css'
 require('packs/scripts.js')

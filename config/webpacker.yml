@@ -10,12 +10,12 @@ default: &default
 
   # Additional paths webpack should lookup modules
   # ['app/assets', 'engine/foo/app/assets']
-  additional_paths: []
+  additional_paths: ['app/assets']
 
   # Reload manifest.json on all requests so we reload latest compiled packs
   cache_manifest: false
 
-  # Extract and emit a css file
+  # Extract and emit a scss file
   extract_css: false
 
   static_assets_extensions:
@@ -37,10 +37,10 @@ default: &default
     - .js
     - .sass
     - .scss
-    - .css
+    - .scss
     - .module.sass
     - .module.scss
-    - .module.css
+    - .module.scss
     - .png
     - .svg
     - .gif
@@ -85,7 +85,7 @@ production:
   # Production depends on precompilation of packs prior to booting for performance.
   compile: false
 
-  # Extract and emit a css file
+  # Extract and emit a scss file
   extract_css: true
 
   # Cache manifest.json for performance
