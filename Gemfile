@@ -34,7 +34,8 @@ gem 'toastr-rails'
 gem 'jquery_mask_rails'
 
 group :production do
-  gem 'pg'         #gem to use in production environment
+  gem 'pg'
+  gem 'rails_12factor' #gem to use in production environment
 end
 
 group :development, :test do
